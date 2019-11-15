@@ -1,5 +1,5 @@
 # MarkDown Cheat Sheet
-**In random order, some of the cool syntax I tend to forget, but use often.**
+**In random order, some of the cool syntax and some of the useful ones I tend to forget, but use often.**
 
 
 # Contents
@@ -55,7 +55,9 @@ I dont't know if I would really need this but I'm gonna leave it here anyways. T
 - - - 
 
 ## Emojis
-Just found this out :sweat_smile: So, I'm gonna leave this here:  
+Just found this out :sweat_smile: All shortcodes are compiled in this [Emoji Markdown][emd].
+
+So, I'm gonna leave this here:  
 :heart: :x: :robot:
 
 
@@ -79,3 +81,4 @@ Just to test the in-document section link
 [md]:https://github.com/mtc-20/CheatSheets/blob/master/MarkDown_CS.md
 [1]:https://github.com/mtc-20/CheatSheets
 [ldr]:https://en.wikipedia.org/wiki/Love,_Death_%26_Robots
+[emd]:https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
