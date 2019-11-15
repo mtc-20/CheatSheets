@@ -1,5 +1,5 @@
 # MarkDown Cheat Sheet
-** In  random order**
+**In  random order**
 
 
 # Contents
