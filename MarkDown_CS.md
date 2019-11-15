@@ -6,7 +6,7 @@
 1. [Hyperlinks](#hyperlinks)
 2. [Section Links](#section-links)
 3. [Check Boxes](#check-boxes)
-
+4. [Horizontal Lines](#lines)
 
 ## Hyperlinks
 General rule to create links in MD is to enclose the link text in [ ] followed immdeiately by the link/address inside ( ).
@@ -27,11 +27,11 @@ A cleaner way to do this is
 ```
 For example, here [another link to my CheatSheets repo][1] , the link is actually located at the bottom of the document, making it cleaner to read.
 
-Alternatively if you dont like numbering links, this also works 
+Alternatively if you dont like numbering links, changing the code to this
 ```
 [link to my MarkDown CheatSheet][md]
 ```
-
+should still work like so
 [link to my MarkDown CheatSheet][md]
 
 
@@ -47,10 +47,18 @@ should give you this
 
 [link text](#header)
 
+## Lines
+I dont't know if I would really need this but I'm gonna leave it here anyways. This `- - -` should generate a horizontal line as below
+- - - 
 
+**<p align="center">Cool?</p>**
+
+- - - 
 ## Check Boxes
 Use [ ] and [x] in your indented list to denote open and closed checkboxes, like so
+- [ ] Just remembered I don't really know the syntax to add images
 - [ ] Remind self to look into improving readability of MarkDown files
+- [ ] Think long and hard about whether you want tables in MarkDown
 - [x] Create a repo that consolidates commonly forgotten features
 
 
