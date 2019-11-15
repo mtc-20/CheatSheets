@@ -47,9 +47,7 @@ For example, typing this
 ```
 [link text](#header)
 ```
-should give you this
-
-[link text](#header)
+should give you this [link text](#header) which will take you to the Header section located towards the end of this document.
 
 
 
