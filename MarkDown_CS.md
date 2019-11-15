@@ -8,6 +8,8 @@
 3. [Check Boxes](#check-boxes)
 4. [Horizontal Lines](#lines)
 5. [Emojis](#emojis)
+6. [Tables](#tables)
+7. [Block Quotes](#block-quotes)
 
 ## Hyperlinks
 General rule to create links in MD is to enclose the link text in [ ] followed immdeiately by the link/address inside ( ).
@@ -48,11 +50,13 @@ should give you this
 
 [link text](#header)
 
+
+
 ## Lines
-I dont't know if I would really need this but I'm gonna leave it here anyways. This `- - -` should generate a horizontal line as below
+I dont't know if I would really need this but I'm gonna leave it here anyways. This `- - -`, `---`,`***` or `___` ,i.e., atlleast 3 should generate a horizontal line as below
 - - - 
 **<p align="center">Cool?</p>**
-- - - 
+____
 
 ## Emojis
 Just found this out :sweat_smile: All shortcodes are compiled in this [Emoji Markdown][emd].
@@ -63,12 +67,47 @@ So, I'm gonna leave this here:
 
 For those who don't get it, do check [it out][ldr]
 
+## Block Quotes
+Alternative to code blocks, use `>` to get the followinf output
+> __<p align="center">Check this out, I'm just writing this so that the line becomes long enough to wrap itself inside the quoteblock, oh and notice how I also got it be bold and centre aligned, maybe I overdid it now? Most of the stuff here, I used to refer to [markdown-here][3]</p>__
+
+
+## Tables
+Tables can be created with the following features:
+* header cells which must be separated by atleast 3 dashes `---`
+* different alignments for each column can be specified by colons 
+* most markdown formating works
+* the outer pipes | are not mandatory
+```
+|  Column1 Label     | Column2 Label| Column3 Label | Column4 Label |
+| :---------: |:-----| :--------: |-----: |
+| 1           |  This |       This    | This |
+| 2           | is       |          is  |  is   |
+| 3           |  left      |  ✔    centre   |  right    |
+| 4           | aligned      |  ✔   aligned    |  aligned|
+| ...           | ...   | ...         | ...    |
+| **in bold**  | *in italics*    | 43% ✔       | ` ✔`   |
+```
+the output for which looks like this
+
+
+|Column1 Label| Column2 Label| Column3 Label   | Column4 Label |
+| :---------: |:-----        | :--------:      |-----:         |
+| 1           |This column   |      This column| This column   |
+| 2           | is           |          is     |  is           |
+| 3           |  left        |       centre    |  right        |
+| 4           | aligned      |      aligned    |  aligned      |
+| ...         | ...          | ...             | ...           |
+| **in bold** | *in italics* |~~strike that ✔~~| `render ✔`    |
+
+
+
 
 ## Check Boxes
 Use `[ ]` and `[x]` in your indented list to denote open and closed checkboxes, like so
-- [ ] Just remembered I don't really know the syntax to add images
-- [ ] Remind self to look into improving readability of MarkDown files
-- [ ] Think long and hard about whether you want tables in MarkDown
+- [ ] Just remembered I don't really know the syntax to add images or videos
+- [ ] ~~Remind self to look into improving readability of MarkDown files~~ *meh*
+- [x] Think long and hard about whether you want tables in MarkDown
 - [x] Create a repo that consolidates commonly forgotten features
 
 
@@ -82,3 +121,4 @@ Just to test the in-document section link
 [1]:https://github.com/mtc-20/CheatSheets
 [ldr]:https://en.wikipedia.org/wiki/Love,_Death_%26_Robots
 [emd]:https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
+[3]:https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables
