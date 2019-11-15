@@ -10,6 +10,7 @@
 5. [Emojis](#emojis)
 6. [Tables](#tables)
 7. [Block Quotes](#block-quotes)
+8. [Hotkeys](#hotkeys)
 
 ## Hyperlinks
 General rule to create links in MD is to enclose the link text in [ ] followed immdeiately by the link/address inside ( ).
@@ -101,6 +102,15 @@ the output for which looks like this
 | **in bold** | *in italics* |~~strike that ✔~~| `render ✔`    |
 
 
+## Hotkeys
+To show keys(the align tags are optional of course)
+```
+<p align="center"><kbd>F</kbd> <kbd>U</kbd></p>
+```
+
+<p align="center"><kbd>F</kbd> <kbd>U</kbd></p>
+
+so neat, right?
 
 
 ## Check Boxes
