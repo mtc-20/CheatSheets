@@ -7,6 +7,7 @@
 2. [Section Links](#section-links)
 3. [Check Boxes](#check-boxes)
 4. [Horizontal Lines](#lines)
+5. [Emojis](#emojis)
 
 ## Hyperlinks
 General rule to create links in MD is to enclose the link text in [ ] followed immdeiately by the link/address inside ( ).
@@ -50,10 +51,17 @@ should give you this
 ## Lines
 I dont't know if I would really need this but I'm gonna leave it here anyways. This `- - -` should generate a horizontal line as below
 - - - 
-
 **<p align="center">Cool?</p>**
-
 - - - 
+
+## Emojis
+Just found this out :sweat_smile: So, I'm gonna leave this here:  
+:heart: :x: :robot:
+
+
+For those who don't get it, do check [it out][ldr]
+
+
 ## Check Boxes
 Use `[ ]` and `[x]` in your indented list to denote open and closed checkboxes, like so
 - [ ] Just remembered I don't really know the syntax to add images
@@ -70,3 +78,4 @@ Just to test the in-document section link
 # The End ?
 [md]:https://github.com/mtc-20/CheatSheets/blob/master/MarkDown_CS.md
 [1]:https://github.com/mtc-20/CheatSheets
+[ldr]:https://en.wikipedia.org/wiki/Love,_Death_%26_Robots
