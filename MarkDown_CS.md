@@ -1,5 +1,5 @@
 # MarkDown Cheat Sheet
-**In  random order**
+**In random order, some of the cool syntax I tend to forget, but use often.**
 
 
 # Contents
@@ -55,7 +55,7 @@ I dont't know if I would really need this but I'm gonna leave it here anyways. T
 
 - - - 
 ## Check Boxes
-Use [ ] and [x] in your indented list to denote open and closed checkboxes, like so
+Use `[ ]` and `[x]` in your indented list to denote open and closed checkboxes, like so
 - [ ] Just remembered I don't really know the syntax to add images
 - [ ] Remind self to look into improving readability of MarkDown files
 - [ ] Think long and hard about whether you want tables in MarkDown
