@@ -28,6 +28,7 @@
 
 ## rostopic
 - `rostopic list` lists all the active topics.
+- `rostopic list -v` lists all the active topics, grouped into publishers and subscribers
 - `rostopic info /<topic>`provides info about the spcecified topic
 - `rostopic echo /<topic>` prints realtime data being published to the specified topic.
 
