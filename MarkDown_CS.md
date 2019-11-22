@@ -4,6 +4,7 @@
 
 # Contents
 1. [Hyperlinks](#hyperlinks)
+   1. [Hyperlinks to headers in another repo](#specific-links)
 2. [Section Links](#section-links)
 3. [Check Boxes](#check-boxes)
 4. [Horizontal Lines](#lines)
@@ -29,7 +30,7 @@ A cleaner way to do this is
 
 [intermediate-link-can-even-be-a-number]:web-address
 ```
-For example, here [another link to my CheatSheets repo][1] , the link is actually located at the bottom of the document, making it cleaner to read.
+For example, here's [another link to my CheatSheets repo][1] , the link is actually located at the bottom of the document, making it cleaner to read.
 
 Alternatively if you dont like numbering links, changing the code to this
 ```
@@ -38,7 +39,12 @@ Alternatively if you dont like numbering links, changing the code to this
 should still work like so
 [link to my MarkDown CheatSheet][md]
 
-
+### Specific Links
+GitHub now has a cool way to even link to specific headers/sections in another repo. Try it out:
+[Link to **Saving Files** in my OpenCV CheatSheet][2]
+```
+[Link text](web-address#header)
+```
 
 ## Section Links
 You can create links to sections/headers within the document itself by enclosing the link text in [ ] followed by the name of the header to be linked in all lowercase
@@ -125,8 +131,12 @@ Use `[ ]` and `[x]` in your indented list to denote open and closed checkboxes, 
 Just to test the in-document section link
 
 # The End ?
+---
+___
+***
 [md]:https://github.com/mtc-20/CheatSheets/blob/master/MarkDown_CS.md
 [1]:https://github.com/mtc-20/CheatSheets
 [ldr]:https://en.wikipedia.org/wiki/Love,_Death_%26_Robots
 [emd]:https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 [3]:https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables
+[2]:https://github.com/mtc-20/CheatSheets/blob/master/opencv.md#writing-to-file
