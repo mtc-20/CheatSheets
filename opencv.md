@@ -49,14 +49,20 @@ This code should go immediately below the `imshow` command.
   if k%256 == 27:
     print ("[INFO] Escape hit, closing...")
     break
+    
+# This should go outside the loop
 cv2.destroyAllWindows()
 ```
+The `27` in the above code is the hexadecimal escape sequence for the <kbd>Esc</kbd> key.
 
 ## Writing to file
+### Saving Images
 
 `cv2.imwrite("Output.png", frame)` can be used to save a file.
 
-Use the below code to save images from a video stream. **Very useful if for creating datasets for machine learning.**
+Use the below code to save images from a video stream to the current directory. 
+
+**Very useful for creating datasets for machine learning.**
 ```
 import cv2
 
@@ -70,16 +76,49 @@ while True:
 
     if k%256 == 27:
         # ESC pressed
-        print("Escape hit, closing...")
+        print("[INFO] Escape hit, closing...")
         break
         
     elif k%256 == 32:
         # SPACE pressed
         img_name = "Image_{}.png".format(ctr)
         cv2.imwrite(img_name, frame)
-        print("{} written!".format(img_name))
+        print("[INFO] {} written!".format(img_name))
         ctr += 1
         
 cap.release()
 cv2.destroyAllWindows()
 ```
+### Saving Video
+```
+import cv2
+
+cap = cv2.VideoCapture(0)
+
+# Define the codec and create VideoWriter object
+out = cv2.VideoWriter('output.avi', -1, 20.0, (640,480))
+
+while(cap.isOpened()):
+    ret, frame = cap.read()
+    if ret==True:
+        frame = cv2.flip(frame,0)
+
+        # write the flipped frame
+        out.write(frame)
+
+        cv2.imshow('frame',frame)
+        k= cv2.waitKey(1)
+        
+        if k%256==27:
+            print("[INFO] Escape hit, closing...")
+            break
+    else:
+        print("[INFO] Unable to access video. Exiting...")
+        break
+
+# Release everything if job is finished
+cap.release()
+out.release()
+cv2.destroyAllWindows()
+```
+Do a test run first, in case the file isn't saved properly, then the right resolution has to be passed when declaring `out`.
