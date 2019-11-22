@@ -54,4 +54,32 @@ cv2.destroyAllWindows()
 
 ## Writing to file
 
-`cv2.imwrite("Output", frame)` can be used to save a file
+`cv2.imwrite("Output.png", frame)` can be used to save a file.
+
+Use the below code to save images from a video stream. **Very useful if for creating datasets for machine learning.**
+```
+import cv2
+
+cap = cv2.VideoCapture(0)
+ctr = 1
+
+while True:
+    ret, frame = cap.read()
+    cv2.imshow('Test',frame)
+    k = cv2.waitKey(1)
+
+    if k%256 == 27:
+        # ESC pressed
+        print("Escape hit, closing...")
+        break
+        
+    elif k%256 == 32:
+        # SPACE pressed
+        img_name = "Image_{}.png".format(ctr)
+        cv2.imwrite(img_name, frame)
+        print("{} written!".format(img_name))
+        ctr += 1
+        
+cap.release()
+cv2.destroyAllWindows()
+```
