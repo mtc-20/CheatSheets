@@ -3,12 +3,12 @@
 
 
 # Contents
-1. Navigation  
+1. **Navigation**  
     1. [Change to package directory](#roscd)
     2. [Get info about a package](#rospack)
     3. [List content of a package](#rosls)
 
-2. Data Analysis
+2. **Data Analysis**
     1. [Topics](#rostopic)
     2. [Nodes](#rosnode)
     3. [Publishers](#rosbag)
