@@ -4,8 +4,11 @@
 1. [Helper Library](#convenience)
 2. [Displaying output](#display)
 3. [Saving Files](#writing-to-file)
+4. [Haar Cascade](#haar-cascade)
+   1. [Trained Classifiers](#classifiers)
+   2. [Cascade Trainer GUI](#gui)
 
-
+---
 ## Convenience
 `imutils` is a helper library for OpenCV, that simplifies the use of certain OpenCV functions: 
 - The `PiVideoStream` class enables streaming from the Pi camera with multithreading, thereby improving FPS and overall performance.
@@ -19,6 +22,7 @@ pip install imutils
 
 Do check out the [imutils GitHub repo](https://github.com/jrosebr1/imutils) for more of the useful features. Maybe even check out his blog which has a ton of tutorials on OpenCV, ranging from simple image processing to motion detection to deep learning.
 
+---
 ## Display
 If you're somebody like me who prefers to or always runs scripts fromk within an IDE (eg. Spyder), then remember to always accompany `imshow` command with the `waitKey()` and `destroyAllWindows()` commands.
 
@@ -55,6 +59,7 @@ cv2.destroyAllWindows()
 ```
 The `27` in the above code is the hexadecimal escape sequence for the <kbd>Esc</kbd> key.
 
+___
 ## Writing to file
 ### Saving Images
 
@@ -122,3 +127,28 @@ out.release()
 cv2.destroyAllWindows()
 ```
 Do a test run first, in case the file isn't saved properly, then the right resolution has to be passed when declaring `out`.
+
+______
+## HAAR CASCADE
+An object detection algorithm proposed by Paul Viola and Michael Jones, is a machine learning algorithm that is effective and light for binary classification.
+
+The newer versions of OpenCV, while supporting the use of the classifiers, no longer support training your own classifiers; unless maybe you build from source.
+
+So, to train your own classfier using OpenCV, create a virtual environment and install an OpenCV version older than 3.4. Then, these are good starting points: 
+- [Naotoshi Seo][sonots]
+- [Dileep Kumar][opencvuser]
+
+### Classifiers
+The xml files of trained classifiers can be found inside the OpenCV installation directory as well. Alternatively, you could just download the ones you require from [their GitHub repo][opencvdata].
+
+### GUI
+Alternatively, if, like me, you don't like dealing with environments, then there is this amazing GUI package from [Amin Ahmadi][ctgui] which works on Windows 10!
+
+
+
+
+
+[sonots]:http://note.sonots.com/SciSoftware/haartraining.html
+[opencvuser]:http://opencvuser.blogspot.com/2011/08/creating-haar-cascade-classifier-aka.html
+[ctgui]:https://amin-ahmadi.com/cascade-trainer-gui/
+[opencvdata]:https://github.com/opencv/opencv/tree/master/data/haarcascades
