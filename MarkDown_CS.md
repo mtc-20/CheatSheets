@@ -86,12 +86,12 @@ Tables can be created with the following features:
 ```
 |  Column1 Label     | Column2 Label| Column3 Label | Column4 Label |
 | :---------: |:-----| :--------: |-----: |
-| 1           |  This |       This    | This |
+| 1           |  This column |       This column   | This column |
 | 2           | is       |          is  |  is   |
 | 3           |  left      |  ✔    centre   |  right    |
 | 4           | aligned      |  ✔   aligned    |  aligned|
-| ...           | ...   | ...         | ...    |
-| **in bold**  | *in italics*    | 43% ✔       | ` ✔`   |
+| ...         | ...      | ...         | ...    |
+| **in bold** | *in italics*    | ~~strike that ✔~~       | ` render ✔`   |
 ```
 the output for which looks like this
 
