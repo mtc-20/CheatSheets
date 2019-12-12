@@ -7,7 +7,7 @@
 4. [Haar Cascade](#haar-cascade)
    1. [Trained Classifiers](#classifiers)
    2. [Cascade Trainer GUI](#gui)
-
+5. [Object Tracking](#object-tracking)
 ---
 ## Convenience
 `imutils` is a helper library for OpenCV, that simplifies the use of certain OpenCV functions: 
@@ -143,7 +143,10 @@ The xml files of trained classifiers can be found inside the OpenCV installation
 
 ### GUI
 Alternatively, if, like me, you don't like dealing with environments, then there is this amazing GUI package from [Amin Ahmadi][ctgui] which works on Windows 10!
-
+____
+## OBJECT TRACKING
+OpenCV has modules that allow tracking of objects. The computer vision models require that the object to be tracked be present in the first frame and it's bounding box be defined.
+The scripts and more details have been compiled in [this repo][objtrk]
 
 
 
@@ -152,3 +155,4 @@ Alternatively, if, like me, you don't like dealing with environments, then there
 [opencvuser]:http://opencvuser.blogspot.com/2011/08/creating-haar-cascade-classifier-aka.html
 [ctgui]:https://amin-ahmadi.com/cascade-trainer-gui/
 [opencvdata]:https://github.com/opencv/opencv/tree/master/data/haarcascades
+[objtrk]:https://github.com/mtc-20/Object_Tracking
