@@ -3,7 +3,7 @@
 
 
 ## Contents
-- [Saving and Reading/Loading Lists](lists-as-files)
+- [Saving and Reading/Loading Lists](#lists-as-files)
 
 ___
 ## Lists as Files
