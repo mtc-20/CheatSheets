@@ -8,6 +8,7 @@
    1. [Trained Classifiers](#classifiers)
    2. [Cascade Trainer GUI](#gui)
 5. [Object Tracking](#object-tracking)
+6. [Wrapping text](#text-wrap)
 ---
 ## Convenience
 `imutils` is a helper library for OpenCV, that simplifies the use of certain OpenCV functions: 
@@ -147,12 +148,22 @@ ____
 ## OBJECT TRACKING
 OpenCV has modules that allow tracking of objects. The computer vision models require that the object to be tracked be present in the first frame and it's bounding box be defined.
 The scripts and more details have been compiled in [this repo][objtrk]
+___
+### TEXT WRAP
+The `cv2.putText` can be a hassle when dealing with really long texts. The only workaround for now is to manually wrap the text by looping through the text; found an easy block on [stackoverflow][stack].
+```python
+text = "This is \n some text that just \n refuses to fit within the screen \n and I can't figure out why" # Use escape sequences to separate each line
 
+y0, dy = 50, 30 # starting y position and line spacing
 
-
+for i, line in enumerate(text.split('\n')):
+   y = y0 + i*dy
+   cv2.putText(frame, line, (50, y ), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (200,0,0), 2)
+```
 
 [sonots]:http://note.sonots.com/SciSoftware/haartraining.html
 [opencvuser]:http://opencvuser.blogspot.com/2011/08/creating-haar-cascade-classifier-aka.html
 [ctgui]:https://amin-ahmadi.com/cascade-trainer-gui/
 [opencvdata]:https://github.com/opencv/opencv/tree/master/data/haarcascades
 [objtrk]:https://github.com/mtc-20/Object_Tracking
+[stack]:https://stackoverflow.com/questions/27647424/opencv-puttext-new-line-character
