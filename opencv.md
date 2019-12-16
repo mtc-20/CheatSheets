@@ -35,7 +35,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 Or just use this function, if the script requires displaying multiple images.
-```
+```python
 import cv2
 
 def display(img):
@@ -48,7 +48,7 @@ def display(img):
 **Video or Camera Feed**
 
 This code should go immediately below the `imshow` command.
-```
+```python
   k = cv2.waitKey(1)
   if k%256 == 27:
     print ("[INFO] Escape hit, closing...")
@@ -68,7 +68,7 @@ ___
 Use the below code to save images from a video stream to the current directory. 
 
 **Very useful for creating datasets for machine learning.**
-```
+```python
 import cv2
 
 cap = cv2.VideoCapture(0)
@@ -95,7 +95,7 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 ### Saving Video
-```
+```python
 import cv2
 
 cap = cv2.VideoCapture(0)
