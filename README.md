@@ -4,8 +4,8 @@
 
 # Contents
 
-1. **[MarkDown](https://github.com/mtc-20/CheatSheets/blob/master/MarkDown_CS.md)**
-2. **[ROS](https://github.com/mtc-20/CheatSheets/blob/master/ROS_CS.md)**
-3. **[OpenCV](https://github.com/mtc-20/CheatSheets/blob/master/opencv.md)**
-4. **[Python](https://github.com/mtc-20/CheatSheets/blob/master/Python.md)**
+1. **[MarkDown](MarkDown_CS.md)**
+2. **[ROS](./ROS_CS.md)**
+3. **[OpenCV](./opencv.md)**
+4. **[Python](./Python.md)**
 5. **[Git](./Git_CS.md)**
